@@ -101,7 +101,9 @@ jQuery(function($) {
     $(this).parent().addClass("active");
 
     $("#show-api-div .div-container").load(this.href, function() {
+      $("#show-api-div .div-container").hide();
       prettyPrint();
+      $("#show-api-div .div-container").show();
 
       $("#show-api-div form").enableNavTabsFor("fieldset");
       $("#show-api-div form").displayOnlySelectedParamsFieldset();
