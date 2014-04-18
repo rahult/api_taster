@@ -108,3 +108,18 @@ legend {
     }
   }
 }
+
+.nav-header {
+  cursor: pointer;
+  font-size: 100%;
+}
+
+.nav-header ul {
+  list-style-type: none;
+  margin-left: 0;
+  display: none;
+}
+
+.nav-header ul li {
+  margin: 5px;
+}

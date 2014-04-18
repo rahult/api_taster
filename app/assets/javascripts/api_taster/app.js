@@ -113,6 +113,17 @@ jQuery(function($) {
     });
   });
 
+  $(".nav-header").on('click', function(event) {
+    $scope = $(this);
+    $(".nav-header ul").hide();
+    $scope.find('ul').toggle();
+    event.preventDefault();
+  });
+
+  $('.nav-header').on('selectstart', function (event) {
+    event.preventDefault();
+  });
+
   function onSubmit(e) {
     $form = $(e.target);
     ApiTaster.disableSubmitButton();
