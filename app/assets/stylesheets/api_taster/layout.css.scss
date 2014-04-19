@@ -109,12 +109,12 @@ legend {
   }
 }
 
-.nav-header {
+.nav-header .title {
   cursor: pointer;
-  font-size: 100%;
+  font-size: 130%;
 }
 
-.nav-header:hover, .nav-header.active {
+.nav-header .title:hover, .nav-header.active .title {
   color: #666;
 }
 
@@ -126,6 +126,7 @@ legend {
 
 .nav-header ul li {
   margin: 5px;
+  font-size: 125%;
 }
 
 .nav-header, .nav-header ul li {

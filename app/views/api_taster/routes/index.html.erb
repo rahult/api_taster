@@ -3,7 +3,7 @@
     <div class="div-container">
       <ul class="well nav nav-list">
         <% if @has_missing_definitions || @has_obsolete_definitions %>
-          <li class="nav-header">Information
+          <li class="nav-header"><span class="title">Information</span>
             <ul>
               <% if @has_missing_definitions %>
                 <%= render 'information_warning_li',
@@ -21,7 +21,7 @@
           </li>
         <% end %>
         <% @routes.each do |controller, routes| %>
-          <li class="nav-header"><%= controller %>
+          <li class="nav-header"><span class="title"><%= controller %></span>
             <ul>
               <% routes.each do |route| %>
                 <li>

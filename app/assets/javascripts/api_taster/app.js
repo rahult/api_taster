@@ -113,8 +113,8 @@ jQuery(function($) {
     });
   });
 
-  $(".nav-header").on('click', function(event) {
-    $scope = $(this);
+  $(".nav-header .title").on('click', function(event) {
+    $scope = $(this).parent();
     $(".nav-header.active").hide();
 
     if($scope.hasClass("active")) {
