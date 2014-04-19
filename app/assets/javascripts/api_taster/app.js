@@ -115,8 +115,16 @@ jQuery(function($) {
 
   $(".nav-header").on('click', function(event) {
     $scope = $(this);
-    $(".nav-header ul").hide();
-    $scope.find('ul').toggle();
+    $(".nav-header.active").hide();
+
+    if($scope.hasClass("active")) {
+      $scope.find('ul').hide();
+      $scope.removeClass('active');
+    } else {
+      $scope.find('ul').show();
+      $scope.addClass('active');
+    }
+
     event.preventDefault();
   });
 
