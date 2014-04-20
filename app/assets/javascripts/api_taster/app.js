@@ -115,7 +115,11 @@ jQuery(function($) {
 
   $(".nav-header .title").on('click', function(event) {
     $scope = $(this).parent();
-    $(".nav-header.active").hide();
+
+    $(".nav-header.active")
+      .removeClass('active')
+      .find('ul')
+      .hide();
 
     if($scope.hasClass("active")) {
       $scope.find('ul').hide();
