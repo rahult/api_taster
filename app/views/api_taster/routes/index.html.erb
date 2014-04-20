@@ -1,7 +1,7 @@
 <div id="main-container" class="row-fluid">
   <div id="list-api-div" class="span5">
     <div class="div-container">
-      <ul class="well nav nav-list">
+      <ul class="well nav nav-list clearfix">
         <% if @has_missing_definitions || @has_obsolete_definitions %>
           <li class="nav-header"><span class="title">Information</span>
             <ul>
@@ -39,7 +39,7 @@
       </ul>
     </div>
   </div>
-  <div id="show-api-div" class="span7">
+  <div id="show-api-div" class="span7 nav clearfix">
     <div class="div-container">
       <div class="alert alert-block alert-info">
         <h3>Select an API endpoint on the left to get started. :)</h3>
