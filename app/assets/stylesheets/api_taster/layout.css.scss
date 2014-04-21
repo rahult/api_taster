@@ -27,6 +27,7 @@ body {
 #show-api-div {
   height: 100%;
   overflow: auto;
+  -webkit-transform: translateZ(0);
 
   .div-container {
     padding-bottom: 50px;
