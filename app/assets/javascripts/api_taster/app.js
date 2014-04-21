@@ -176,6 +176,8 @@ jQuery(function($) {
         break;
     }
 
+    $("#show-api-div").css({ height: $("#show-api-div").height(), overflow: 'auto' });
+
     $("#show-api-response-div pre[ref=response-raw]").text(xhr.responseText);
 
     prettyPrint();
